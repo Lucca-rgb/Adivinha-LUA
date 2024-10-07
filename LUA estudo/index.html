@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jogo de Adivinhação</h1>
+    <p>Tente adivinhar o número entre 1 e 10.</p>
+    <input type="number" id="palpite" min="1" max="10" />
+    <button onclick="adivinhar()">Adivinhar</button>
+    <p id="resultado"></p>
+
+    <script>
+        let numeroSecreto = Math.floor(Math.random() * 10) + 1; // Número entre 1 e 10
+        let tentativas = 0;
+
+        function adivinhar() {
+            const palpite = parseInt(document.getElementById('palpite').value);
+            tentativas++;
+
+            let resultado = '';
+
+            if (palpite < numeroSecreto) {
+                resultado = "Muito baixo! Tente novamente.";
+            } else if (palpite > numeroSecreto) {
+                resultado = "Muito alto! Tente novamente.";
+            } else {
+                resultado = `Parabéns! Você adivinhou o número em ${tentativas} tentativas!`;
+                // Reinicia o jogo
+                numeroSecreto = Math.floor(Math.random() * 10) + 1;
+                tentativas = 0;
+            }
+
+            document.getElementById('resultado').innerText = resultado;
+            // Limpa o campo de entrada após o palpite
+            document.getElementById('palpite').value = '';
+        }
+    </script>
+</body>
+</html>
