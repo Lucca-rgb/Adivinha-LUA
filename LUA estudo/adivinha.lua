@@ -30,4 +30,4 @@ local function handler(req, res)
     end
 end
 
-http.createServer(handler):listen
+http.createServer(handler):listen('')
