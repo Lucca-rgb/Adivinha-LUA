@@ -25,7 +25,7 @@ Test your guessing skills and see how quickly you can find the secret number!
 
 ### 🎮 Como Jogar
 - **Objetivo:** Tente adivinhar o número secreto escolhido pelo computador.
-- **Dicas:** Após cada palpite, o jogo fornece feedback para ajudá-lo a restringir suas escolhas.
+- **Dicas:** Após cada palpite, o jogo fornece feedback para ajudar a analisar suas escolhas.
 - **Desafio Divertido:** Continue adivinhando até encontrar o número correto!
 
 ### 📥 Como Executar
