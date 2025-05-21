@@ -1,4 +1,4 @@
-ocal http = require('http')
+local http = require('http')
 local url = require('url')
 
 math.randomseed(os.time())
