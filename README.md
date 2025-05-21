@@ -1,6 +1,6 @@
 # 🎲 Adivinha-LUA
 
-## English Version
+## Eglish Version
 **Adivinha-LUA** is a simple guessing game created using the LUA programming language. In this game, you can make guesses to try to uncover the secret number!
 
 ### 🎮 How to Play
